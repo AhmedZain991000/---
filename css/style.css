@@ -1,0 +1,422 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a:hover{
+    text-decoration: none;
+}
+body{
+    direction: rtl;
+    text-align: right;
+}
+:root{
+    --bg-green: #1B3022;
+    --action-yellow: #E9B44C;
+    --text-color: #444;
+    --bg-creamy: #F4F1DE;
+    --btn-color: #A8C69F;
+    --highlight: #E9B44C;
+    --text-font: 'Cairo', sans-serif;
+    --title-font: 'Almarai', sans-serif;
+    --title-color: #2f7d32;
+    --section-color: #e6f4ea;
+}
+/* titles */
+.titles{
+    position: relative;
+    font-size: 45px;
+    color: var(--bg-creamy);
+    font-family: var(--title-font);
+    margin-bottom: 40px;
+    display: block;
+}
+.titles::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 20%;
+    margin-left: 40%;
+    background-color: var(--title-color);
+    margin-bottom: -12px;
+}
+
+/* //////////////////// top nav start ////////////////////// */
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.topnav{
+    background-color: #273f30;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+}
+.topnav-ul{
+    list-style: none;
+    width: 60%;
+    margin-right: 20%;
+    justify-content: space-between;
+    color: var(--action-yellow);
+}
+.topnav .topnav-ul i{
+    font-size: 15px;
+    animation-name: zoom ;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes zoom {
+    0% {transform: scale(.2 ,.2);}
+
+    50% {transform: scale( 1.1,1.1);}
+
+    100% {transform: scale(.2 ,.2);}
+
+}
+.topnav .topnav-ul strong{
+    font-size: 15px;
+    color: var(--bg-creamy);
+}
+/*///////////////////// top nav end //////////////////////////*/
+
+/* ///////////////////////// header start ///////////////// */
+.main-ul li a{
+    display: block;
+    font-size: 20px;
+}
+.main-ul li a:hover{
+    transform: scale(1.05);
+}
+.main-ul li a:focus{
+    border-bottom: 1px solid var(--action-yellow);
+    border-radius: 20px;
+}
+.main-ul{
+    border-radius: 10px;
+}
+.navbar{
+    width: 100%;
+    background-color: var(--bg-green);
+}
+#navbarTogglerDemo03{
+    justify-content: center;
+}
+.contuct-btn{
+    border-radius: 20px;
+    background-color: var(--btn-color);
+    color: var(--bg-green);
+    border: none;
+    outline: none;
+}
+.contuct-btn:hover{
+    opacity: .8;
+}
+.contuct-btn a{
+    color: var(--primary-green);
+    font-weight: bold;
+}
+.contuct-btn a i{
+    font-size: 20px;
+}
+header .navbar-brand{
+    display: block;
+}
+.brand-name{
+    font-family: "Reem Kufi", sans-serif;
+    font-optical-sizing: auto;
+}
+/* ///////////////////////// header end ///////////////// */
+
+/* /////////////////////////////// home section start ///////////// */
+.hero {
+    background: linear-gradient(
+    to bottom,
+    #f6f5ef,
+    #f0efe6
+    ); /* الأبيض الكريمي */
+    padding: 80px 5%;
+    display: flex;
+    align-items: center;
+    min-height: 95vh;
+    /*  box shadow */
+    margin: 10px 0; /* مسافة فوق وتحت */
+    border-radius: 2px; /* حواف مستديرة بسيطة */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* ظل خفيف */
+    background-color: #fff;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-family: var(--title-font);
+    font-size: 3.5rem;
+    color: var(--title-color); /* الأخضر الغابة */
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: var(--highlight); /* الأصفر الخردلي */
+}
+
+.hero-content p {
+    font-family: var(--text-font);
+    font-size: 1.2rem;
+    color: var(--text-dark); /* الرمادي الفحمي */
+    margin-bottom: 35px;
+    line-height: 1.8;
+}
+
+/* تنسيق الأزرار */
+.hero-btn {
+    background-color: var(--btn-color);
+    color: var(--bg-green);
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.hero-btn:hover {
+    transform: scale(.9);
+    color: var(--bg-green);
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; /* شكل عضوي غير منتظم */
+    box-shadow: 20px 20px 60px #d9d9d1;
+    max-width:100%;
+    border-radius:30% 70% 70% 30% / 30% 30% 70% 70%;
+    box-shadow:20px 20px 60px #d9d9d1;
+    animation: float 4s ease-in-out infinite;
+    }
+
+@keyframes float{
+    0%{
+    transform: translateY(0px);
+    }
+    50%{
+    transform: translateY(-15px);
+    }
+    100%{
+    transform: translateY(0px);
+    }
+}
+
+/* /////////////////////////////// home section end ///////////// */
+
+/* ////////////////////////////// about section start ///////////////////// */
+.about-section{
+    min-height: 80vh;
+    padding: 20px;
+}
+.about-section .about-parent{
+    background-color: var(--section-color);
+    position: relative;
+    padding: 10px;
+    border-radius: 50px;
+}
+.about-section .about-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    transform: scale(.8);
+}
+.about-content{
+    text-align: center;
+    max-width: 800px;
+}
+
+.about-content p{
+    font-size: 20px;
+    font-family: var(--text-color);
+    line-height: 2;
+}
+/* ////////////////////////////// about section end ///////////////////// */
+
+/* --------------- خدماتنا //////////////// */
+.our-services{
+    min-height: 90vh;
+    background-color: var(--section-color);
+}
+.our-services .parent{
+    padding: 5px;
+    border-radius: 40px;
+    min-height: 650px;
+}
+.our-services .parent .box:hover{
+    transform: scale(1.05);
+    transition: .2s;
+}
+.our-services .parent .box{
+    border-radius: 20px;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.15);
+}
+.our-services .parent .box .overlay{
+    position: absolute;
+    background-color: var(--bg-creamy);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    opacity: .7;
+    display: none;
+}
+.our-services .parent .box .overlay h2 a{
+    font-size: 40px;
+}
+.our-services .parent .box:hover .overlay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-services .parent i{
+    font-size: 40px;
+    color: var(--title-color);
+}
+.our-services .parent .box h5{
+    color: var(--title-color);
+}
+.our-services .parent .box .card-body p{
+    color: var(--text-color);
+}
+/* --------------- نهاية خدماتنا //////////////// */
+
+/* /////////////////// يوجد لدينا بداية */
+.we-have{
+    margin: 20px 0;
+    min-height: 80vh;
+    background-color: var(--bg-creamy);
+}
+.we-have .parent .item{
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.we-have .parent .item p{
+    margin: 0;
+    font-size: 20px;
+    background-color: var(--btn-color);
+    color: #2f7d32;
+}
+.we-have .parent .item img:hover{
+    display: block;
+    transform: scale(1.2);
+    transition: .5s;
+}
+.we-have .parent .item p{
+    position: relative;
+    z-index: 10;
+}
+/* /////////////////// يوجد لدينا نهاية */
+
+/* //////////////////////////////////  بداية اعمالنا /////////////////////////// */
+.our-work{
+    background-color: var(--bg-creamy);
+}
+.before-after {
+position: relative;
+overflow: hidden;
+border-radius: 15px;
+cursor: pointer;
+filter: grayscale(100%);
+margin: 10px 0;
+}
+.before-after:hover{
+    filter: grayscale(0);
+}
+.before-after img {
+width: 100%;
+display: block;
+transition: 0.5s;
+}
+
+
+/* //////////////////////////////////  نهاية اعمالنا /////////////////////////// */
+
+/* /////////////////////////////////////////////// آراء العملاء بداية*/
+.reviews{
+    background-color: var(--section-color);
+}
+.review-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    background: #fff;
+    border: 1px dashed black;
+    background-color: var(--bg-creamy);
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.review-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #f1f1f1;
+    transition: 0.3s;
+    border-color: var(--title-color);
+}
+
+.review-card:hover .review-img {
+    border-color: var(--action-yellow);
+}
+/* /////////////////////////////////////////////// آراء العملاء نهاية*/
+
+/* ///////////////////////////////////// footer start //////////////////////////////// */
+footer{
+    background-color: var(--bg-green);
+}
+.footer-links h2{
+    color: var(--title-color);
+    opacity: .8;
+    margin-bottom: 10px;
+}
+.footer-links li a{
+    color: var(--btn-color);
+    line-height: 2;
+    font-size: 17px;
+}
+.footer-links li a:hover{
+    color: var(--title-color);
+}
+.footer-links .contact{
+    color: var(--btn-color);
+}
+/* ///////////////////////////////////// footer end //////////////////////////////// */
+
+/* /////////////////////////////// sub footer start ///////////////////// */
+.subfooter{
+    min-height: 50px;
+    background-color: var(--btn-color);
+    font-weight: bold;
+}
+.subfooter span{
+    font-size: 20px ;
+}
+/* /////////////////////////////// sub footer end ///////////////////// */
