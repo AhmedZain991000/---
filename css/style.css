@@ -51,15 +51,10 @@ header{
 }
 .topnav{
     background-color: #273f30;
-    height: 30px;
-    padding: 5px;
-    width: 100%;
+    min-height: 30px;
 }
 .topnav-ul{
     list-style: none;
-    width: 60%;
-    margin-right: 20%;
-    justify-content: space-between;
     color: var(--action-yellow);
 }
 .topnav .topnav-ul i{
@@ -76,10 +71,7 @@ header{
     100% {transform: scale(.2 ,.2);}
 
 }
-.topnav .topnav-ul strong{
-    font-size: 15px;
-    color: var(--bg-creamy);
-}
+
 /*///////////////////// top nav end //////////////////////////*/
 
 /* ///////////////////////// header start ///////////////// */
@@ -98,7 +90,6 @@ header{
     border-radius: 10px;
 }
 .navbar{
-    width: 100%;
     background-color: var(--bg-green);
 }
 #navbarTogglerDemo03{
@@ -231,14 +222,12 @@ header .navbar-brand{
 
 /* ////////////////////////////// about section start ///////////////////// */
 .about-section{
-    min-height: 80vh;
-    padding: 20px;
+    min-height: 70vh;
+    margin: 20px 0;
 }
 .about-section .about-parent{
     background-color: var(--section-color);
     position: relative;
-    padding: 10px;
-    border-radius: 50px;
 }
 .about-section .about-img img{
     width: 100%;
@@ -307,7 +296,6 @@ header .navbar-brand{
 
 /* /////////////////// يوجد لدينا بداية */
 .we-have{
-    margin: 20px 0;
     min-height: 80vh;
     background-color: var(--bg-creamy);
 }
