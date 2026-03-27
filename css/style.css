@@ -224,9 +224,13 @@ header .navbar-brand{
 .about-section{
     min-height: 70vh;
     margin: 20px 0;
+    background-image: url(../images/about-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 .about-section .about-parent{
-    background-color: var(--section-color);
+    /* background-color: var(--section-color); */
     position: relative;
 }
 .about-section .about-img img{
@@ -236,6 +240,8 @@ header .navbar-brand{
     transform: scale(.8);
 }
 .about-content{
+    background-color: var(--btn-color);
+    border-radius: 40px;
     text-align: center;
     max-width: 800px;
 }
@@ -250,7 +256,11 @@ header .navbar-brand{
 /* --------------- خدماتنا //////////////// */
 .our-services{
     min-height: 90vh;
-    background-color: var(--section-color);
+    /* background-color: var(--section-color); */
+    background-image: url(../images/green-grass.jpg);
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
 }
 .our-services .parent{
     padding: 5px;
@@ -264,6 +274,7 @@ header .navbar-brand{
 .our-services .parent .box{
     border-radius: 20px;
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--btn-color);
 }
 .our-services .parent .box .overlay{
     position: absolute;
@@ -298,16 +309,20 @@ header .navbar-brand{
 .we-have{
     min-height: 80vh;
     background-color: var(--bg-creamy);
+    background-image: url(../images/we\ have-bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
 }
 .we-have .parent .item{
     border-radius: 40px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
 }
 .we-have .parent .item p{
     margin: 0;
     font-size: 20px;
-    background-color: var(--btn-color);
+    /* background-color: var(--btn-color); */
     color: #2f7d32;
 }
 .we-have .parent .item img:hover{
@@ -330,11 +345,12 @@ position: relative;
 overflow: hidden;
 border-radius: 15px;
 cursor: pointer;
-filter: grayscale(100%);
+/* filter: grayscale(100%); */
 margin: 10px 0;
 }
 .before-after:hover{
-    filter: grayscale(0);
+    transform: scale(1.05);
+    transition: .5s;
 }
 .before-after img {
 width: 100%;
