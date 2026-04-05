@@ -261,7 +261,7 @@ header .navbar-brand{
     background-position: center;
     /* background-attachment: fixed; */
     background-size: cover;
-    background-color: #1B3022;
+    background-color: var(--bg-creamy);
 }
 .our-services .parent{
     padding: 5px;
