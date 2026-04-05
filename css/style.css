@@ -257,10 +257,11 @@ header .navbar-brand{
 .our-services{
     min-height: 90vh;
     /* background-color: var(--section-color); */
-    background-image: url(../images/green-grass.jpg);
+    /* background-image: url(../images/we\ have-bg.avif); */
     background-position: center;
     /* background-attachment: fixed; */
     background-size: cover;
+    background-color: #1B3022;
 }
 .our-services .parent{
     padding: 5px;
@@ -269,30 +270,36 @@ header .navbar-brand{
 }
 .our-services .parent .box:hover{
     transform: scale(1.05);
-    transition: .2s;
+    transition: .5s;
 }
 .our-services .parent .box{
     border-radius: 20px;
     box-shadow: -10px 0 20px rgba(0, 0, 0, 0.15);
     background-color: var(--btn-color);
 }
+.our-services .parent .box img{
+    filter: grayscale(100%);
+}
+.our-services .parent .box:hover img{
+    filter: grayscale(0);
+}
 .our-services .parent .box .overlay{
     position: absolute;
-    background-color: var(--bg-creamy);
+    background-color: var(--text-color);
     width: 100%;
     height: 100%;
     border-radius: 20px;
-    opacity: .7;
+    opacity: .8;
     display: none;
 }
 .our-services .parent .box .overlay h2 a{
     font-size: 40px;
 }
-.our-services .parent .box:hover .overlay{
+/* .our-services .parent .box:hover .overlay{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .our-services .parent i{
     font-size: 40px;
     color: var(--title-color);
@@ -357,7 +364,6 @@ width: 100%;
 display: block;
 transition: 0.5s;
 }
-
 
 /* //////////////////////////////////  نهاية اعمالنا /////////////////////////// */
 
