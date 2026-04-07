@@ -6,21 +6,6 @@
 <link rel="shortcut icon" href="images/pngegg (2).png" type="image/x-icon">
 <!-- <link rel="apple-touch-icon" sizes="180x180" href="link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">"> -->
 <!-- favicon end -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "GardenStore",
-  "name": "اللمسة الخضراء",
-  "image": "images/pngegg (2).png",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "الرياض",
-    "addressCountry": "SA"
-  },
-  "telephone": "0548694760",
-  "url": "https://yourwebsite.com"
-}
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="مشتل نباتات في الرياض لبيع نباتات الزينة والشتلات وتنسيق الحدائق بأفضل الأسعار مع خدمة توصيل سريعة.">
@@ -35,6 +20,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&display=swap" rel="stylesheet">
     <!-- fonts بخىفس ثىي -->
 </head>
+    <!-- to up -->
+    <a href="#" class="back-to-top" aria-label="العودة للأعلى">
+    ↑
+    </a>
+    <script>
+        const btn = document.querySelector('.back-to-top');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+            btn.classList.add('show');
+            } else {
+            btn.classList.remove('show');
+            }
+        });
+
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <!-- to up -->
     <body>
         <header>
             <div class="topnav">
@@ -59,12 +65,16 @@
                         <li class="nav-item active"><a class="nav-link" href="#">الرئيسية</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about-section">نبذة عنا</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-toggle="collapse" data-target="#plogs">خدماتنا</a>
-                            <ul class="dropdown-menu dropdown border border-dark" id="plogs">
-                                <li><a class="dropdown-item text-dark" href="#services">زراعة النباتات</a></li>
-                                <li><a class="dropdown-item text-dark" href="#services">صيانة الحدائق</a></li>
-                                <li><a class="dropdown-item text-dark" href="#services">أحدث التصميمات</a></li>
-                            </ul>
+                            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                خدماتنا
+                            </a>
+
+                            <div class="dropdown-menu text-right" aria-labelledby="servicesDropdown">
+                                <a class="dropdown-item" href="#services">زراعة النباتات</a>
+                                <a class="dropdown-item" href="#services">صيانة الحدائق</a>
+                                <a class="dropdown-item" href="#services">أحدث التصميمات</a>
+                            </div>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="#works">أعمالنا</a></li>
                     </ul>
